@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Adopción de Perros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Perritos en Adopción</h1>
+
+    <div id="formulario-adopcion">
+        <h2>Registrar Nuevo Perrito</h2>
+        <form id="form-perro">
+            <input type="text" id="nombre" placeholder="Nombre del Perro" required>
+            <input type="number" id="edad" placeholder="Edad" required>
+            <input type="text" id="raza" placeholder="Raza" required>
+            <input type="text" id="historia" placeholder="Breve historia" required>
+            <input type="file" id="foto" accept="image/*" required>
+            <button type="submit">Registrar Perro</button>
+        </form>
+    </div>
+
+    <div id="catalogo-perros" class="catalogo">
+        <!-- Aquí se insertarán dinámicamente las tarjetas de perros -->
+    </div>
+
+    <div id="galeria-perros" class="galeria">
+        <h2>Galería de Perritos</h2>
+        <div id="imagenes-galeria" class="contenedor-imagenes">
+            <!-- Las imágenes se agregarán dinámicamente aquí -->
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
